@@ -1,0 +1,582 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --primary-color: #1c1c3f;
+  --secondary-color: #d3b574;
+  --tertiary-color: #7a7a7a;
+}
+/* topbar */
+.topbar {
+  background: #1c1c3f;
+  height: 40px;
+}
+
+.topbar .container ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 40px;
+  gap: 5px;
+}
+
+.topbar .container ul li {
+  font-size: 0.7rem;
+  color: #f4f4f4;
+  margin: 5px 2px;
+}
+.topbar .container ul li i {
+  margin-right: 3px;
+}
+
+/* navbar */
+.navbar {
+  background-color: #23233f;
+  height: 70px;
+}
+
+.navbar .logo img {
+  height: 70px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul li a {
+  color: #f4f4f4;
+  display: inline-block;
+  height: 70px;
+  display: flex;
+  text-align: center;
+  font-size: 0.9rem;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.navbar ul li a:hover {
+  background: black;
+  animation: 1s;
+}
+.navbar .logo a:hover {
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+
+.navbar .active a {
+  background-color: black;
+}
+/* section heading */
+.heading {
+  background-color: #211f40;
+}
+.heading .container-sm {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.heading h4 {
+  font-size: 16px;
+  font-family: montserrat;
+  font-weight: 200;
+}
+.heading h1 {
+  font-size: 55px;
+  font-family: merriweather;
+  font-weight: 300;
+}
+
+/* section 2 */
+.section2 {
+  background-color: #fff;
+  margin-top: 150px;
+}
+
+.section2 .container-mid {
+  display: flex;
+  flex-direction: column;
+}
+
+.section2 .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section2 .content .headpara {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  border-left: 4px solid #d3b574;
+}
+
+.section2 .headpara h2 {
+  font-size: 50px;
+  padding-left: 15px;
+  font-family: Merriweather;
+  font-weight: 300;
+  color: #23233f;
+  line-height: 68px;
+}
+
+.section2 .headpara p {
+  padding-top: 20px;
+  color: #7a7a7a;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+.section2 .para {
+  margin-bottom: 30px;
+}
+.section2 .para p {
+  color: #7a7a7a;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 17px;
+}
+.section2 .content {
+  margin-bottom: 150px;
+}
+
+.section-cards .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.section-cards .card {
+  padding: 60px 60px 60px 60px;
+  margin: 5px;
+  border-top: 4px solid #4a4a4a;
+  box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.1);
+}
+.section-cards .card:hover {
+  border-top: 4px solid var(--secondary-color);
+  transition: 0.5s;
+}
+
+.section-cards .card h4 {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 20px;
+  font-family: roboto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-cards .card p {
+  color: var(--tertiary-color);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: roboto;
+  text-align: center;
+}
+
+/* section mid */
+.sectionM {
+  margin-top: 150px;
+  background-size: cover; /* Cover the entire section with the background image */
+  background-attachment: fixed;
+  width: 100%;
+  background-image: url(../images/New-Project.jpg);
+}
+.sectionM .overlay {
+  background-color: rgba(28, 28, 63, 0.7);
+
+  width: 100%;
+}
+
+.sectionM .container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionM .container h1 {
+  font-size: 70px;
+  color: #fff;
+  text-align: center;
+  line-height: 4.3rem;
+  font-family: "Open Sans", Arial;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.sectionM .container p {
+  color: #fff;
+  text-align: center;
+  line-height: 3em;
+  font-family: Open Sans;
+  font-size: 14px;
+}
+.section-mid .mid-body {
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+  justify-content: center;
+  align-items: center;
+}
+.section-mid .overlay {
+  min-height: 500px;
+}
+.section-mid .overlay {
+  display: flex;
+  align-items: center;
+}
+.section-mid .mid-body h2 {
+  font-size: 48px;
+  font-family: merriweather;
+  text-align: center;
+  font-weight: 300;
+}
+
+.section-mid .mid-body p {
+  font-family: montserrat;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+/* section-card */
+.section-card .container-mid {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: -100px;
+}
+.section-card .card-mid {
+  background-color: white;
+  border-left: 4px solid #d3b574;
+  padding: 40px 70px 50px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-card .card-mid :nth-child(1) {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: montserrat;
+  color: #1c1c3f;
+  margin-bottom: 10px;
+}
+.section-card .card-mid :nth-child(2) {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: montserrat;
+  color: #7a7a7a;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
+.section-card .card-mid :nth-child(3) {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: montserrat;
+  color: #7a7a7a;
+  line-height: 25px;
+}
+/* section consultation  */
+.section-consult {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.section-consult .container-b .consult {
+  background-color: #211f40;
+  padding: 100px 300px 100px 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-consult .consult h2 {
+  font-size: 50px;
+  font-family: merriweather;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.section-consult .consult h3 {
+  font-size: 18px;
+  font-family: montserrat;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+.section-consult .consult button {
+  margin-top: 45px;
+  background-color: var(--secondary-color);
+  padding: 10px 20px 10px 20px;
+  border-style: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+/* footer */
+.footer {
+  height: 40px;
+  background-color: #1c1c3f;
+}
+.footer .container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container p {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 13px;
+  font-weight: 100;
+}
+
+/* utiliy classes */
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-mid {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-sm {
+  max-width: 600px;
+  margin: 0 auto 0 auto;
+  padding: 0 15px;
+}
+.container-b {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* hamburger button */
+.hamburger-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+.hamburger-button .hamburger-line {
+  width: 30px;
+  height: 3px;
+  background: #ffffff;
+  margin: 6px 0;
+}
+/* mobile menu */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: -1000px;
+  right: 0px;
+  width: 100%;
+  height: 280px;
+  z-index: 100;
+  background: #25253f;
+  transition: right 2s;
+}
+.mobile-menu.active {
+  top: 129px;
+}
+.mobile-menu ul {
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-left: 20px;
+}
+
+.mobile-menu ul li a {
+  font-size: 16px;
+  transition: 0.3s;
+  font-weight: 300;
+  font-family: montserrat;
+}
+.mobile-menu ul li a:hover {
+  background: #d3b574;
+  animation: 1s;
+}
+.mobile-menu ul li a:active {
+  color: #d3b574;
+}
+.mobile-menu .active a {
+  background-color: #d3b574;
+}
+
+.mobile-card {
+  display: none;
+}
+/* media queries */
+@media (max-width: 670px) {
+  .navbar .main-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .navbar .hamburger-button {
+    display: block;
+  }
+  .topbar {
+    height: 60px;
+  }
+  .topbar .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  .navbar .active a {
+    background: none;
+  }
+
+  .navbar a {
+    display: block;
+  }
+  /* section heading */
+  .heading {
+    background-color: #211f40;
+  }
+  .heading h1 {
+    font-size: 45px;
+  }
+
+  /* section 2 */
+  .section2 {
+    margin-top: 50px;
+  }
+
+  .section2 .content .headpara {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+
+  .section2 .headpara h2 {
+    font-size: 45px;
+    line-height: 55px;
+    border-left: 4px solid #d3b574;
+  }
+
+  .section2 .content {
+    margin-bottom: 70px;
+  }
+
+  .section-cards .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-cards .card {
+    padding: 60px 30px 60px 30px;
+  }
+
+  /* section mid */
+  .sectionM {
+    margin-top: 70px;
+    background-size: cover;
+    background-attachment: local;
+    background-position: center;
+  }
+  .sectionM .overlay {
+  }
+
+  .sectionM .container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectionM .container p {
+    color: #fff;
+    text-align: center;
+    line-height: 3em;
+    font-family: Open Sans;
+    font-size: 14px;
+  }
+  .section-mid .mid-body {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .section-mid .mid-body h2 {
+    font-size: 40px;
+  }
+
+  .section-mid .mid-body p {
+    font-size: 14px;
+    padding-top: 20px;
+
+    line-height: 30px;
+    text-align: center;
+  }
+
+  /* section-card */
+
+  .section-card .container-mid {
+    flex-direction: column;
+  }
+  .section-card .card-mid {
+    padding: 40px 30px 50px 30px;
+  }
+  /* section consultation  */
+  .section-consult {
+    margin-top: 70px;
+  }
+  .section-consult .container-b .consult {
+    background-color: #211f40;
+    padding: 100px 30px 100px 30px;
+  }
+  .section-consult .consult h2 {
+    font-size: 33px;
+  }
+  .section-consult .consult h3 {
+    font-size: 15px;
+
+    font-weight: 300;
+  }
+}
